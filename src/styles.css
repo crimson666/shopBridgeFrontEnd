@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-.h100{
-    margin-top: 100px;
-}
+.h50{margin-top: 50px;}
+.h100{margin-top: 100px;}
+.h150{margin-top: 150px;}
+.h200{margin-top: 200px;}
+.h250{margin-top: 250px;}
 .compicon{
     width:150px;
     height:150px;

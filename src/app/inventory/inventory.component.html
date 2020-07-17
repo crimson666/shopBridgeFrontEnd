@@ -1,1 +1,53 @@
-<p>inventory works!</p>
+<div class="row h100" >
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6 ContinerShadow">
+        <!--fomr container--->
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+                <img src="https://image.flaticon.com/icons/svg/3043/3043514.svg" class="compicon" />
+            </div>
+            <div class="col-sm-5"><p class="mainText pt20 tal">Add Products</p></div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row h50">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form action="" class="form row">
+                    <div class="form-group col-sm-12 row">
+                         <label class="form-label col-sm-6" for="Name">Product Name</label>
+                         <input id="Name" class="form-input col-sm-6" type="text" placeholder="Enter product Name" />
+                    </div>
+                    <div class="form-group col-sm-12 row">
+                        <label class="form-label col-sm-6" for="price">Price</label>
+                        <input id="price" class="form-input col-sm-6" type="number" placeholder="Enter product Price" />
+                    </div>
+                    <div class="form-group col-sm-12 row">
+                        <label class="form-label col-sm-6" for="brand">Brand</label>
+                        <input id="brand" class="form-input col-sm-6" type="text" placeholder="Enter product Brand" />
+                        </div>
+                    <div class="form-group col-sm-12 row">
+                        <label class="form-label col-sm-6" for="category">Category</label>
+                        <select  id="category" class="form-input col-sm-6" type="text" placeholder="Enter product Category">
+                            <option value="Automatic Watch">Automatic Watch</option>
+                            <option value="Field Watch">Field Watch</option>
+                            <option value="Pilot Watch">Pilot Watch</option>
+                            <option value="Driver Watch">Driver Watch</option>
+                            <option value="Militry Watch">Militry Watch</option>
+                            <option value="Sports Watch">Sports Watch</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-12 row">
+                        <label class="form-label col-sm-6" for="Destription">Destription</label>
+                        <textarea rows="4" cols="50" id="Destription" class="form-input col-sm-6" type="text" placeholder="About the Product" ></textarea>
+                    </div>
+                </form>
+
+                <button type="button" class="btn btn-outline-success length90p f30 mb20" (click)="AddProduct()">
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                Add Product</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>

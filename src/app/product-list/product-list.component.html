@@ -9,7 +9,7 @@
                 <div class="col-sm-12 m0 pl10 pr10 pt10 h200px">
                     <p class="p0 m0">Watch</p>
                     <h5>AV-4064-02</h5>
-                    <h4>&#8377; 12,000</h4>
+                    <h4 style="color:#007bff">&#8377; 12,000</h4>
                     <p>bla bla bla bla bla bla bla bla blabla bla blabla bla bla</p>
                 </div>
                 <div class="col-sm-12 m0 p0 pictabletFooter"></div>
@@ -26,26 +26,24 @@
                 <div class="col-sm-12 m0 pl10 pr10 pt10 h200px">
                     <p class="p0 m0">Watch</p>
                     <h5>AV-4011-0I </h5>
-                    <h4>&#8377; 12,000</h4>
+                    <h4 style="color:#007bff">&#8377; 12,000</h4>
                     <p>bla bla bla bla bla bla bla bla blabla bla blabla bla bla</p>
                 </div>
                 <div class="col-sm-12 m0 p0 pictabletFooter"></div>
             </div>
         </div> 
     </div>
-
-
-    <div class="col-sm-3 m0 p0">
+    <div class="col-sm-3 m0 p0" *ngFor="let product of products">
         <div class="productTablet p0">
             <div class="row p0 m0">
                 <div class="col-sm-12 m0 p0 h200px">
                     <img class="pictablet" src="" onerror="this.src='https://grandzcasinohotel.com/wp-content/themes/Divi/includes/builder/images/premade.png'" />
                 </div>
                 <div class="col-sm-12 m0 pl10 pr10 pt10 h200px">
-                    <p class="p0 m0">Watch</p>
-                    <h5>AV-4011-0I </h5>
-                    <h4>&#8377; 12,000</h4>
-                    <p>bla bla bla bla bla bla bla bla blabla bla blabla bla bla</p>
+                    <p class="p0 m0" style="display:inline;float:left;">{{product.pbrand}}&nbsp;&nbsp;&nbsp;</p> <p class="p0 m0" style="color:#007bff;"> {{product.pcategory}}</p>
+                    <h5>{{product.pname}} </h5>
+                    <h4 style="color:#007bff">&#8377; {{product.price}}</h4>
+                    <p>{{product.pdescription}}</p>
                 </div>
                 <div class="col-sm-12 m0 p0 pictabletFooter"></div>
             </div>
